@@ -7,7 +7,7 @@ n = int(input())
 cmd = {'push':0, 'pop':1, 'size':2, 'empty': 3, 'top':4}
 _cmd = -1
 val = -1
-d = deque()
+d = []
 for i in range(n):
     _msg = input().split()
     if len(_msg) == 1:
