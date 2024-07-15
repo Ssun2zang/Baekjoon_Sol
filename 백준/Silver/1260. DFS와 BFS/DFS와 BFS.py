@@ -8,12 +8,10 @@ class Graph:
         if u in self.graph:
             self.graph[u].append(v)
         else:
-            # 정점이 작은 것부터 먼저 방문하기 때문에 heapq을 사용하여 저장함
             self.graph[u] = [v]
         if v in self.graph:
             self.graph[v].append(u)
         else:
-            # 정점이 작은 것부터 먼저 방문하기 때문에 heapq을 사용하여 저장함
             self.graph[v] = [u]
     
     def get_graph(self):
@@ -50,12 +48,13 @@ else:
     bfs_ans = []
     def bfs(s):
         queue = [s]
+        bfs_ans.append(s)
         while queue:
             t = queue.pop(0)
-            bfs_ans.append(t)
             for temp in sorted(g.get_graph()[t]):
-                if temp not in bfs_ans and temp not in queue:
+                if temp not in bfs_ans and temp:
                     queue.append(temp)
+                    bfs_ans.append(temp)
 
 
     bfs(start)
