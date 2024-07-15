@@ -52,7 +52,7 @@ else:
         while queue:
             t = queue.pop(0)
             for temp in sorted(g.get_graph()[t]):
-                if temp not in bfs_ans and temp:
+                if temp not in bfs_ans:
                     queue.append(temp)
                     bfs_ans.append(temp)
 
