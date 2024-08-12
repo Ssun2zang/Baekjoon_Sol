@@ -16,7 +16,7 @@ from collections import deque
 
 INF = 987654321
 
-visited = [INF for _ in range(1000001)]
+visited = [INF for _ in range(100001)]
 
 # 큐에 현재 위치 넣고, visited에 0 넣었음
 cur = n
@@ -38,11 +38,11 @@ while (queue):
         if (visited[cur-1] == INF):
             visited[cur-1] = visited[cur] + 1
             queue.append(cur-1)
-    if (cur+1 < 1000001):
+    if (cur+1 < 100001):
         if (visited[cur+1] == INF):
             visited[cur+1] = visited[cur] + 1
             queue.append(cur+1)
-    if (2*cur < 1000001):
+    if (2*cur < 100001):
         if (visited[2*cur] == INF):
             visited[2*cur] = visited[cur] + 1
             queue.append(2*cur)
