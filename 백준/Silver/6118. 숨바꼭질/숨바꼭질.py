@@ -5,6 +5,9 @@
 
 # 1. 숨어야하는 헛간 번호 (가장 작은 헛간 번호), 2. 그 헛간까지 거리, 3. 같은 거리를 갖는 헛간의 개수 출력
 
+import sys
+input = sys.stdin.readline
+
 N, M = map(int, input().split())
 
 ways = {i:[] for i in range(N+1)}
@@ -45,7 +48,6 @@ for i, v in enumerate(visited):
         cnt = 1
     elif(v==max_val):
         cnt +=1
-
 
 
 print(ans, max_val, cnt)
