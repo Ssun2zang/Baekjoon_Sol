@@ -7,6 +7,9 @@
 
 # 끝나는 시각을 기준으로 그리디하면 될 것 같은데...
 
+import sys
+input = sys.stdin.readline
+
 N = int(input())
 
 meetings = []
