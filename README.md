@@ -48,6 +48,7 @@
 |2178. 미로 탐색|[링크](./%EB%B0%B1%EC%A4%80/Silver/2178.%E2%80%85%EB%AF%B8%EB%A1%9C%E2%80%85%ED%83%90%EC%83%89/README.md)|
 |21921. 블로그|[링크](./%EB%B0%B1%EC%A4%80/Silver/21921.%E2%80%85%EB%B8%94%EB%A1%9C%EA%B7%B8/README.md)|
 |24511. queuestack|[링크](./%EB%B0%B1%EC%A4%80/Silver/24511.%E2%80%85queuestack/queuestack.py)|
+|2468. 안전 영역|[링크](./%EB%B0%B1%EC%A4%80/Silver/2468.%E2%80%85%EC%95%88%EC%A0%84%E2%80%85%EC%98%81%EC%97%AD/README.md)|
 |2563. 색종이|[링크](./%EB%B0%B1%EC%A4%80/Silver/2563.%E2%80%85%EC%83%89%EC%A2%85%EC%9D%B4/README.md)|
 |2606. 바이러스|[링크](./%EB%B0%B1%EC%A4%80/Silver/2606.%E2%80%85%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4/README.md)|
 |2667. 단지번호붙이기|[링크](./%EB%B0%B1%EC%A4%80/Silver/2667.%E2%80%85%EB%8B%A8%EC%A7%80%EB%B2%88%ED%98%B8%EB%B6%99%EC%9D%B4%EA%B8%B0/README.md)|
