@@ -8,17 +8,18 @@ input = sys.stdin.readline
 
 M, N = map(int, input().split())
 
-arr = [i for i in range(N+1)]
+arr = [True for i in range(N+1)]
 
-arr[1] = 0
+arr[0] = False
+arr[1] = False
 
 for i in range(2, int(sqrt(N))+1):
     # 이미 컷당함
-    if arr[i] == 0:
+    if not arr[i]:
         continue
     for j in range(2*i, N+1, i):
-        arr[j] = 0
+        arr[j] = False
 
 for i in range(M, N+1):
-    if arr[i] != 0:
+    if arr[i]:
         print(i)
