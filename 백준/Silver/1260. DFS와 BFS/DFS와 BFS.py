@@ -1,61 +1,48 @@
-import copy
+# DFS 탐색 결과와 BFS 탐색 결과를 출력
+# 방문할 수 있는 정점이 여러 개인 경우 정점 번호가 작은 것부터 방문
+# 정점 번호 : 1 ~ N
+# 양방향 간선
 
-class Graph:
-    def __init__(self):
-        self.graph = {}
+import sys
+input = sys.stdin.readline
 
-    def add_edge(self, u, v):
-        if u in self.graph:
-            self.graph[u].append(v)
-        else:
-            self.graph[u] = [v]
-        if v in self.graph:
-            self.graph[v].append(u)
-        else:
-            self.graph[v] = [u]
-    
-    def get_graph(self):
-        return self.graph
+N, M, V = map(int, input().split())
 
+edges = [[] for _ in range(N+1)]
 
-n, m, start = map(int, input().split())
-g = Graph()
+for _ in range(M):
+    a, b = map(int, input().split())
+    edges[a].append(b)
+    edges[b].append(a)
 
-# 그래프에 edge를 저장함
-for i in range(m):
-    u, v = map(int, input().split())
-    g.add_edge(u, v)
+for i in range(1, N+1):
+    edges[i].sort()
 
-if start not in g.get_graph().keys():
-    print(start)
-    print(start)
-else:
-    # DFS (깊이 우선 탐색)
-    visited = []
+visited = [False]*(N+1)
 
-    def dfs(s):
-        visited.append(s)
-        for temp in sorted(g.get_graph()[s]):
-            if temp in visited:
-                pass
-            else:
-                dfs(temp)   
+def dfs(s):
+    print(s, end= " ")
+    visited[s] = True
+    for n in edges[s]:
+        if not visited[n]:
+            dfs(n)
 
-    dfs(start)
-    print(*visited)
+dfs(V)
 
-    # BFS (넓이 우선 탐색)
-    bfs_ans = []
-    def bfs(s):
-        queue = [s]
-        bfs_ans.append(s)
-        while queue:
-            t = queue.pop(0)
-            for temp in sorted(g.get_graph()[t]):
-                if temp not in bfs_ans:
-                    queue.append(temp)
-                    bfs_ans.append(temp)
+from collections import deque
 
+def bfs(s):
+    visited = [False]* (N+1)
+    visited[s] = True
+    q = deque()
+    q.append(s)
+    while(q):
+        cur = q.popleft()
+        print(cur, end=" ")
+        for n in edges[cur]:
+            if not visited[n]:
+                q.append(n)
+                visited[n] = True
 
-    bfs(start)
-    print(*bfs_ans)
+print()
+bfs(V)
