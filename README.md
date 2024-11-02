@@ -29,6 +29,7 @@
 ### 🚀 Gold
 | 문제번호 | 링크 |
 | ----- | ----- |
+|1011. Fly me to the Alpha Centauri|[링크](./%EB%B0%B1%EC%A4%80/Gold/1011.%E2%80%85Fly%E2%80%85me%E2%80%85to%E2%80%85the%E2%80%85Alpha%E2%80%85Centauri/Fly%E2%80%85me%E2%80%85to%E2%80%85the%E2%80%85Alpha%E2%80%85Centauri.py)|
 |11657. 타임머신|[링크](./%EB%B0%B1%EC%A4%80/Gold/11657.%E2%80%85%ED%83%80%EC%9E%84%EB%A8%B8%EC%8B%A0/README.md)|
 |1197. 최소 스패닝 트리|[링크](./%EB%B0%B1%EC%A4%80/Gold/1197.%E2%80%85%EC%B5%9C%EC%86%8C%E2%80%85%EC%8A%A4%ED%8C%A8%EB%8B%9D%E2%80%85%ED%8A%B8%EB%A6%AC/README.md)|
 |12834. 주간 미팅|[링크](./%EB%B0%B1%EC%A4%80/Gold/12834.%E2%80%85%EC%A3%BC%EA%B0%84%E2%80%85%EB%AF%B8%ED%8C%85/%EC%A3%BC%EA%B0%84%E2%80%85%EB%AF%B8%ED%8C%85.py)|
